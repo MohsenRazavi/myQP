@@ -2,20 +2,21 @@
 arr = [1, 2, 3]
 subset = []
 
-def get_subsets(k, subset):
+def get_subsets(k):
     """
     This function generates all subsets of a given set.
     It takes an integer k and a list subset as parameters and does not return any value.
     Time Complexity: O(2^n * n)
     """
-    if k == len(subset):
+    if k == len(arr):
         print(subset)
     else:
-        get_subsets(k+1, subset)
+        get_subsets(k+1)
         subset.append(k)
-        get_subsets(k+1, subset)
+        get_subsets(k+1)
         subset.pop()
 
+# get_subsets(0)
 
 
 def get_subsets_bitwise():
@@ -35,4 +36,3 @@ def get_subsets_bitwise():
 
 
 
-get_subsets_bitwise()
