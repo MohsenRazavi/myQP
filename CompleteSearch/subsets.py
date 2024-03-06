@@ -13,7 +13,7 @@ def get_subsets(k):
     else:
         get_subsets(k+1)
         subset.append(k)
-        get_subsets(k+1)
+        get_subsets(k+1)    
         subset.pop()
 
 # get_subsets(0)
