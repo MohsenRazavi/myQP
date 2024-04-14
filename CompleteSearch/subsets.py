@@ -34,5 +34,7 @@ def get_subsets_bitwise():
                 subset.append(arr[j])
         print(subset)
 
+get_subsets_bitwise()
+
 
 

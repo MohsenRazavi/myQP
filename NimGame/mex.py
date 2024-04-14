@@ -1,8 +1,7 @@
-
-def find_mex(arr):
+def mex(arr):
     arr.sort()
+    mex = 0
     for i in range(len(arr)):
-        if arr[i] > i:
-            return i
-    return i+1
-        
+        if arr[i] == mex:
+            mex += 1
+    return mex
