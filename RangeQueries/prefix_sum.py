@@ -1,13 +1,8 @@
 
 def preprocess(arr):
-    sum_arr = []
-    for i in range(len(arr)):
-        s = 0
-        for j in range(i+1):
-            s += arr[j]
-
-        sum_arr.append(s)
-
+    sum_arr = [arr[0]]
+    for i in range(1, len(arr)):
+        sum_arr.append(sum_arr[i-1] + arr[i])
     return sum_arr
 
 
