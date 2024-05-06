@@ -3,8 +3,6 @@ fenwick tree or binary index tree
 kth fenwick tree index stores sum of (k & -k) last elements in it
 """
 
-from math import log2
-
 
 def fenwick_sum(k, ftree):
     s = 0
