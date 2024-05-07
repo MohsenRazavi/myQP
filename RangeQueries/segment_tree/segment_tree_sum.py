@@ -36,7 +36,7 @@ def sum_segment_tree(a, b, stree):
     return s
 
 
-def segment_tree_update(k, x, stree):
+def update_segment_tree(k, x, stree):
     """
     update kth index by increasing x units
     """

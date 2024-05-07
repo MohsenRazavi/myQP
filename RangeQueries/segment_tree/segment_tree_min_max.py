@@ -1,4 +1,3 @@
-
 from math import log2
 
 
@@ -23,3 +22,22 @@ def make_segment_tree(arr, func):
 
     return segment_tree
 
+
+def min_max_segment_tree(a, b, stree, func):
+    """
+    func can be max or min function
+    """
+    n = len(stree) // 2
+    a += n
+    b += n
+    s = 0
+    while a <= b:
+        if a % 2 == 1:
+            s = func(s, stree[a])
+            a += 1
+        if b % 2 == 0:
+            s = func(s, stree[b])
+            b -= 1
+        a //= 2
+        b //= 2
+    return s

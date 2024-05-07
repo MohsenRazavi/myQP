@@ -1,0 +1,7 @@
+for very huge size of array with very huge values
+in a situation which we want to apply lots of updates
+it is a good idea to convert our array to difference array
+and then make a fenwick tree of that difference array
+because updating fenwick tree is order of O(logn)
+and fenwick tree it self saves prefix sum of values so
+we can access elements of array in order O(logn) (sum of 0th index to kth)
