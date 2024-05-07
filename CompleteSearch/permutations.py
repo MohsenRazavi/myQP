@@ -1,8 +1,9 @@
-
 arr = [1, 2, 3]
 n = len(arr)
 permutation = []
 chosen = [None for _ in range(n)]
+
+
 def get_permutations():
     """
     Recursive function to generate all permutations of a given list of elements.
@@ -21,10 +22,8 @@ def get_permutations():
             permutation.pop()
 
 
-
 from itertools import permutations
 
 perm = permutations([1, 2, 3])
 for i in list(perm):
     print(i)
-

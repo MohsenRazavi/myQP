@@ -1,6 +1,6 @@
-
 arr = [1, 2, 3]
 subset = []
+
 
 def get_subsets(k):
     """
@@ -11,10 +11,11 @@ def get_subsets(k):
     if k == len(arr):
         print(subset)
     else:
-        get_subsets(k+1)
+        get_subsets(k + 1)
         subset.append(k)
-        get_subsets(k+1)    
+        get_subsets(k + 1)
         subset.pop()
+
 
 # get_subsets(0)
 
@@ -27,14 +28,12 @@ def get_subsets_bitwise():
     In the second loop we add the value of specified index into a subset.
     Time Complexity: O(2^n * n)
     """
-    for i in range(1<<len(arr)):
+    for i in range(1 << len(arr)):
         subset = []
         for j in range(len(arr)):
-            if i & (1<<j):
+            if i & (1 << j):
                 subset.append(arr[j])
         print(subset)
 
+
 get_subsets_bitwise()
-
-
-
