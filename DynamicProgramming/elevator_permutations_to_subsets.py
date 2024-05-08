@@ -9,6 +9,7 @@ s is the subset mask
 with p we check the elements which are in mask (using indexes)
 s ^ (1 << p) gives us the last state of this subset and we stored it in dp array
 at the end we have the answer of problem in dp[-1][0]
+https://www.youtube.com/watch?v=UEkvzjsodDk
 """
 
 x = int(input())
