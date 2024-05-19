@@ -3,7 +3,7 @@ graph is supposed to be implemented using adjacency list
 visited is a dictionary which will be True for each visited node    
 visited = {node: False for node in nodes}
 
-pass first element to dfs as node
+pass first node to dfs as node
 """
 
 

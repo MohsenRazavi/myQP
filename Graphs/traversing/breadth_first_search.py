@@ -11,7 +11,6 @@ add first element to queue and make its visited True
 """
 
 
-
 def bfs(graph, visited, queue, weighted=False):
     while queue:
         current = queue.popleft()
@@ -28,6 +27,3 @@ def bfs(graph, visited, queue, weighted=False):
                 continue
             visited[neighbour] = True
             queue.append(neighbour)
-
-
-
