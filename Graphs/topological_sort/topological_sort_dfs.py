@@ -13,8 +13,8 @@ def topological_sort(graph, weighted=False):
     v = len(graph)
     visited = {node: False for node in range(v)}
     ans = []
-    for i in range(v):
-        if not visited[i]:
-            dfs(graph, i, visited, weighted)
+    for node in graph:
+        if not visited[node]:
+            dfs(graph, node, visited, weighted)
     ans = ans[::-1]
     return ans
