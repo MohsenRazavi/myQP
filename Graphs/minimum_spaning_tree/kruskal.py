@@ -23,11 +23,8 @@ def kruskal_mst(graph, num_vertices):
 
     graph = sorted(graph, key=lambda edge: edge[2])
     result = []
-
     i = 0
-
     e = 0
-    graph = sorted(graph, key=lambda item: item[2])
     parent = []
     rank = []
 
